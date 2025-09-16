@@ -1,0 +1,37 @@
+<!DOCTYPE html>
+<html lang="es">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Vite App</title>
+  </head>
+  <body>
+    <h1>Trabajando con z-index</h1>
+
+    <!-- .caja.roja#roja{Roja (z-index)}*3 -->
+    <div class="caja roja" id="roja">Roja (z=1)</div>
+    <div class="caja azul" id="azul">Azul (z=2)</div>
+    <div class="caja verde" id="verde">Verde (z=3)</div>
+
+    <div class="panel">
+      <p>Hace click en los botones para traer una caja al frente:</p>
+      <button class="btn-rojo" onclick="traerAlFrente('roja')">Roja al frente</button>
+      <button class="btn-azul" onclick="traerAlFrente('azul')">Azul al frente</button>
+      <button class="btn-verde" onclick="traerAlFrente('verde')">Verde al frente</button>
+    </div>
+
+
+    <script>
+      
+      function traerAlFrente(id) {
+
+          console.log('Holis')
+
+      }
+
+    </script>
+
+
+    <script type="module" src="/src/main.js"></script>
+  </body>
+</html>
