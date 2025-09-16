@@ -1,0 +1,11 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+/* Position Sticky */
+/* Inicialmente sticky se comporta como un position relative. Los etiquetas respetan el espacio del elemento que está relative pero puedo posicionar. (top, bottom, right, left) */
+/* Se respeta el flujo por defecto de los elementos. */
+/* Y luego este elemento que es sticky pasa a comportarse como un fixed */
+/* Un elemento posicionado sticky se va a mantener siendo relative hasta determinado momento, en ese momento dado, definido por el desarrolador el elemento va a empezar comparse como fixed */
