@@ -44,3 +44,41 @@ body {
     width: 3rem;
     height: 3rem;
 }
+
+.elem1 { /* self -> Trabajo sobre la celda en especifico */
+    justify-self: start;
+    align-self: start;
+}
+
+.elem2 {
+    width: auto;
+    justify-self: stretch; /* horizontal */
+    align-self: center; /* vertical */
+}
+
+.elem3 {
+    height: auto;
+    justify-self: end; /* horizontal */
+    align-self: stretch; 
+}
+
+.elem4 {
+    
+}
+
+.elem5 {
+    
+}
+
+.elem6 {
+    
+}
+
+
+.elem7 {
+    
+}
+
+.elem8 {
+    
+}
