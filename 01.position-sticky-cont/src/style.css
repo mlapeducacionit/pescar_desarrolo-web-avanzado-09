@@ -9,3 +9,27 @@
 /* Se respeta el flujo por defecto de los elementos. */
 /* Y luego este elemento que es sticky pasa a comportarse como un fixed */
 /* Un elemento posicionado sticky se va a mantener siendo relative hasta determinado momento, en ese momento dado, definido por el desarrolador el elemento va a empezar comparse como fixed */
+
+body {
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    height: 1300px;
+    background-color: #333;
+    color: #eee;
+}
+
+h1 {
+    margin-bottom: 2.5rem;
+}
+
+.container {
+    width: 1100px;
+    /* margin-left: auto;
+    margin-right: auto; */
+    margin-inline: auto;
+}
+
+.titulo-articulo {
+    background-color: purple;
+    position: sticky; /* cuando va a dejar de comportarse relative el sticky */
+    top: 20px; /* el top 0 del documento. */
+}
