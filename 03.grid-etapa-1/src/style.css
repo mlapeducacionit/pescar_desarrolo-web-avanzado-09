@@ -3,3 +3,31 @@
     padding: 0;
     box-sizing: border-box;
 }
+
+html {
+    font-family: 100%;
+}
+
+body {
+    font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
+    font-size: 100%;
+}
+
+/* la dinamica de trabajo en similar a flexbox, voy a tener elementos contenedores (padres) y los elementos contenidos por esa padre (hijos) */
+
+.contenedor {
+    display: grid;
+    margin: 1rem;
+    /* Grilla explicita */
+    background-color: #ffeadd;
+    /* columnas (tracks) */
+    /* grid-template-columns: 100px 100px 100px; */
+    /* grid-template-columns: 10rem 10rem 10rem; */
+    /* grid-template-columns: 33.3% 33.3% 33.3%; */
+    /* fr -> Fracción */
+    /* grid-template-columns: 1fr 1fr 1fr 1fr 1fr; */
+   /*  grid-template-columns: repeat(2, 1fr) 2fr; */
+    grid-template-columns: repeat(4, .5fr) repeat(2, 2fr);
+    /* filas (tracks) */
+    /* Grilla implicita */
+}
