@@ -30,12 +30,21 @@
           // document.getElementById() // Es más eficiente que el querySelector
           //console.log(cajas) 
           let maxZ = 0
-
+          //debugger
           cajas.forEach(caja => {
-            console.log(caja) // cada uno de los nodos por separado
+            //console.log(caja) // cada uno de los nodos por separado
+            // Averiguo que z tiene actualmente el nodo html
+            //console.log(window.getComputedStyle(caja).zIndex)
+            // parseInt -> Convertir una cadena (string) en número
+            const z = parseInt(window.getComputedStyle(caja).zIndex)
+            if (z > maxZ) maxZ = z 
           })
 
+          const seleccionada = document.getElementById(id)
+          console.log(seleccionada)
+          seleccionada.style.zIndex = maxZ + 1
 
+          
       }
 
     </script>
