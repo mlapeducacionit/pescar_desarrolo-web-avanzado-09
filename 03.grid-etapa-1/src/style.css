@@ -18,7 +18,7 @@ body {
 .contenedor {
     display: grid;
     margin: 1rem;
-    /* Grilla explicita */
+    /* ! Grilla explicita */
     background-color: #ffeadd;
     /* columnas (tracks) */
     /* grid-template-columns: 100px 100px 100px; */
@@ -27,7 +27,22 @@ body {
     /* fr -> Fracción */
     /* grid-template-columns: 1fr 1fr 1fr 1fr 1fr; */
    /*  grid-template-columns: repeat(2, 1fr) 2fr; */
-    grid-template-columns: repeat(4, .5fr) repeat(2, 2fr);
+    /* grid-template-columns: repeat(4, .5fr) repeat(2, 2fr); */
+    grid-template-columns: repeat(2, 200px);
     /* filas (tracks) */
-    /* Grilla implicita */
+    grid-template-rows: repeat(10, 1fr);
+    /* ! Grilla implicita (Crean dinamicamente) */
+    grid-auto-rows: 2fr;
+    /* grid-auto-columns: ; */
+    /* row-gap: 1rem;
+    column-gap: 3rem; */
+    gap: 2rem;
+
+    height: 500px;
+    width: 800px;
+}
+
+.elemento {
+    background-color: #ff6666;
+    text-align: center;
 }
