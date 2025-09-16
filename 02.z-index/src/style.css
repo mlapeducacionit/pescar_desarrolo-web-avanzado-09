@@ -58,3 +58,17 @@ button {
     border-radius: 5px;
     cursor: pointer;
 }
+
+.btn-rojo {
+    background: crimson;
+    color: #eee;
+}
+.btn-azul {
+    background: royalblue;
+    color: #eee;
+}
+.btn-verde {
+    background: seagreen;
+    color: #eee;
+}
+
