@@ -25,7 +25,16 @@
       
       function traerAlFrente(id) {
 
-          console.log('Holis')
+          const cajas = document.querySelectorAll('.caja') // NodeList -> De un array
+          // const cajas = document.getElementsByClassName('caja') // HTMLCollections -> Se parece un array
+          // document.getElementById() // Es más eficiente que el querySelector
+          //console.log(cajas) 
+          let maxZ = 0
+
+          cajas.forEach(caja => {
+            console.log(caja) // cada uno de los nodos por separado
+          })
+
 
       }
 
